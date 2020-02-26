@@ -447,10 +447,9 @@
                  8 0
                 [bsc #:width 5 #:angle 90]))
 
-(define kiengi
-  (beside ki
-   ;; en
-   (overlay/align/offset
+
+(define en
+  (overlay/align/offset
     "center" "top"
     (overlay/align/offset
      "center" "center"
@@ -482,9 +481,12 @@
                            [bsc #:width -3 #:angle 90 #:scale 0.8]
                            [bsc #:width -4 #:angle 90 #:scale 0.8]))) )
      4 0
-     [bsc #:width 1]))
-  ;; gi
-   (overlay/align/offset
+     [bsc #:width 1])))
+
+
+
+(define gi
+  (overlay/align/offset
     "left" "center"
     [bsc #:width 7]
     4 0
@@ -508,8 +510,11 @@
        [bsc #:width -4 #:angle 170 #:scale 0.7]
        [bsc #:width -4 #:angle 170 #:scale 0.7]
        [bsc #:width -4 #:angle 170 #:scale 0.7]
-       [bsc #:width -4 #:angle 170 #:scale 0.7]))))
-   ))
+       [bsc #:width -4 #:angle 170 #:scale 0.7])))))
+
+(define kiengi
+  (beside ki en gi))
+
 
 (define ga
   (beside
