@@ -658,3 +658,4 @@
  (save-image (text1 #:scale 0.5) "text1.png"
   (image-width (text1 #:scale 0.5)) (image-height (text1 #:scale 2)))
 |#
+;;Dara
